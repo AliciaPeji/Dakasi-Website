@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="star.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Here at Dakasi </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="background.png" class="img-responsive">
+        <div class="logo"><a href="homepage.html">
+            <img class="img-responsive" src="dak.png" width="20%"></a>
+        </div>
+            <div class="header">    
+                <div class="header">
+                </div>
+        </div>
+        <br>
+        <br>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img onmouseover= "slide(this)" src="1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="uu.jpg" style="width:100%">
+            </div>
+            
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        
+        <script>
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1} 
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none"; 
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block"; 
+                dots[slideIndex-1].className += " active";
+                }
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1} 
+                x[slideIndex-1].style.display = "block"; 
+                setTimeout(carousel, 3500);
+                }
+            
+        </script>
+        <div class="navbar">
+            <div class="topnav-centered">
+                <div class="dropdown">
+                    <button class="dropbtn active">
+                        <a href="homepage.html" style="font-size: 1.3vw"> Home</a>
+                        <i class="ezdrop"></i>
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="products.html" style="font-size: 1.3vw"> Our Products</a>
+                        <i class="ezdrop"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="products.html"> Welcome to Dakasi products, where we all enjoy!<br><br> Brown Sugar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fresh Fruit <br> Classic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Matcha<br> Latte Series</a>
+                        <a href="shop.html">My Shop</a>
+                    </div>
+                </div>    
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="contact.html" style="font-size: 1.3vw">Contact Us </a>
+                        <i class="ezdrop"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="contact.html"> How to contact us? <br><br> Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone No.<br>Email address</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <div class="dropdown-content">
+                            <a href="products.html" style="font-size: 1vw"> How to contact us?<br><br> Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Telephone No. <br> Email address</a>
+                        </div>
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="about.html" style="font-size: 1.3vw"> About </a>
+                        <i class="ezdrop"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html"> This is Dakasi, <br> whats's ours is yours.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                document.getElementsByClassName("navbar");
+                if (x.className === "navbar") {
+                    x.className += "responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            }
+        </script>
+        <br>
+        <br>
+        <div class="prod-tit"><a href="products.html" style="font-size: 2.3vw">Product Center</a></div>
+        <div class="sub" style="font-size: 1vw">Here at Dakasi<br><a style="font-family: sans-serif">______</a></div>
+        <br>
+        <br>
+        <div class="container">
+        <div class="zoomin frame">
+                 <img class="img-responsive" src="7.jpg">
+             </div>
+            <div class="overlay" style="font-size: 1vw"><a href="products.html" style="color: white; text-decoration: none">Oreo Black Rice Matcha Cheese</a></div>
+         </div>
+          <div class="container">
+            <div class="zoomin frame">
+                   <img class="img-responsive" src="11.jpg">
+             </div>
+              <div class="overlay" img src="16.jpg" style="font-size: 1vw"><a href="products.html" style="color: white; text-decoration: none">Whole Lemon Tea</a></div>
+         </div>
+        <div class="container">
+            <div class="zoomin frame">
+                   <img class="img-responsive" src="6.jpg">
+              </div>
+            <div class="overlay" style="font-size: 1vw"><a href="products.html" style="color: white; text-decoration: none">Pearl Milk Tea</a></div>
+       </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="see"><a href="products.html" style="font-family: monospace; color: black; text-decoration: none; font-size: 1vw">See more</a></button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="prod-tit">
+                <a href="about.html" style="font-size: 2.3vw">Company Profile</a>
+            </div>
+            <div class="sub" style="font-size: 1vw">About Us<br>
+                <a style="font-family: sans-serif">______</a>
+            </div>
+        </center>
+        <br>
+        <br>
+        <div class="vid">
+            <video width="680" height="380" controls autoplay>
+                <source src="20181024053839921.mp4" type="video/mp4">
+            </video>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center style="margin-bottom: 60px;">
+            <div class="par" style="font-size: 1vw"> Dakar was born in Taiwan in 1990. It landed on<br> Guangzhou in May 1999 and stablish its head<br> quarters in Guangzhou. Mainly engage in Taiwan's<br> fresh tea drinks, quickly and globally with the<br> advantages of freshness, convinience and unique<br> flavor. In order to meet the requirements of <br>customers increasingly seek healthy fashion,<br> and constantly develop new products to market demand.</div>
+            <br>
+            <br>
+            <button class="see" style=" color: black; text-decoration: none;">
+                <a href="about.html" style="font-family: monospace; color: black; text-decoration: none; font-size: 1vw">See more</a>
+            </button>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="butnavbar">
+               <center>
+                  <ul class="social-icons">
+                      <li> 
+                          <a href="https://web.facebook.com/DakasiPH/" target="_blank">
+                              <img class="img-responsive" src="facebook.png" alt="Facebook account" height="30" width="30">
+                          </a>
+                      </li>
+                      <li> 
+                         <a href="https://www.instagram.com/dakasiph/" target="_blank">
+                              <img src="ig.png" alt="Ig account" height="30" width="30">
+                         </a>
+                     </li>
+                     <li> 
+                         <a href="https://twitter.com/DakasiPH" target="_blank"> 
+                            <img src="twitter.png" alt="Twitter account" height="30" width="30">
+                         </a>
+                     </li>
+                 </ul>
+                 <p class="para" style="font-size: .75vw; font-family: sans-serif; color: white">17 P. Tuazon Blvd., Cubao<br> Quezon City, Philippines<br>Tel:(02) 945-2646 / (02) 570-4361<br><br></p><div class="cop"><a href=copyr.html style="font-size: 10px; font-family: sans-serif; color: white;"> Copyright statement </a></div><p class="para" style="font-size: .75vw; font-family: sans-serif; color: white">Copyrights reserved © 2019. Cavite State University - Carmona Campus</p> 
+            </center>
+        </div>
+    </body>
+</html>
+        
+ 
+        
+  

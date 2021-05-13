@@ -1,0 +1,400 @@
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    font-family: monospace;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+.logo {
+    width: 80%;
+    position: inherit;
+    top: 15%;
+    margin-left: 3%;
+}
+
+.topnav-centered {
+    float: none;
+    position:  absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown:hover{
+    text-decoration: nones;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: monospace;
+    margin: 0;
+}
+
+.dropbtn:hover {
+    color: white;
+    background-color: black;
+    
+}
+
+.dropbtn:active {
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    font-family: monospace;
+}
+
+.dropdown-content a:howver {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.para {
+    font-family: monospace;
+    font-size: 35PX;
+    color: black;
+    margin-left: 10%;
+}
+
+.pr1 {
+    font-family: monospace;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.paar{
+    font-family: monospace;
+    font-size: 25px;
+    margin-left: 50%;
+    margin-right: 10%
+}
+
+.pr2 {
+    font-family: monospace;
+    margin-left: 50%;
+    margin-right: 10%
+}
+
+.pr3 {
+    font-family: monospace;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.pr4 {
+    font-family: monospace;
+    margin-left: 50%;
+    margin-right: 10%
+}
+
+.pr5 {
+    font-family: monospace;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.pr6 {
+    font-family: monospace;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.butnavbar {
+  background-color: black;
+  overflow: auto;
+  position: inherit;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+  margin-left: -8px;
+  margin-top: -120px;
+  clear: both;
+}
+
+.butnavbar a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.butnavbar a.active {
+  background-color: #fad903;
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.social-icons {
+    margin-left: -3%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 150ms;
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.social-icons li a {
+    border-bottom: none;
+}
+
+.social-icons li img {
+    width: 45px;
+    height: 45px;
+    margin: 2px;
+}
+
+.frame {
+    float: right;
+    width="280" 
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-right: 12%
+}
+
+.zoomin img {
+    width="280" 
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.zoomin img:hover{
+    transform: scale(1.15);
+}
+
+.item:not(:first-of-type) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fram {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    overflow: hidden;
+    margin-left: 12%
+}
+
+.zoom img {
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.zoom img:hover{
+    transform: scale(1.15);
+}
+
+.item:not(:first-of-type) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fra {
+    float: right;
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    overflow: hidden;
+    margin-right: 12%
+}
+
+.zoo img {
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.zoo img:hover{
+    transform: scale(1.15);
+}
+
+.item:not(:first-of-type) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fr {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    overflow: hidden;
+    margin-left: 12%
+}
+
+.zo img {
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.zo img:hover{
+    transform: scale(1.15);
+}
+
+.item:not(:first-of-type) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  opacity: 1;
+  visibility: visible;
+}
+
+.f {
+    float: right;
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    overflow: hidden;
+    margin-right: 12%
+}
+
+.z img {
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.z img:hover{
+    transform: scale(1.15);
+}
+
+.item:not(:first-of-type) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cop:hover {
+    text-decoration: underline
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
